@@ -1,0 +1,41 @@
+.cuadrado {
+    width: 900px;
+    height: 1000px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px auto; 
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.cuadrado img {
+    width: 160px;              
+    height: auto;
+    margin-right: 20px;        
+}
+
+.square {
+    width: 100%; 
+    height: 200px;             
+    position: relative;        
+    display: flex;            
+    align-items: center;       
+    padding: 30px;            
+    justify-content: flex-start; 
+}
+
+.text {
+    max-width: 600px;          
+    overflow: hidden;          
+    text-overflow: ellipsis; 
+    white-space: nowrap;    
+}
+
+.text p {
+    font-size: 25px;
+    margin: 5px 0 0;
+    font-weight: 700;
+}
+
+.cuerpo{
+}
