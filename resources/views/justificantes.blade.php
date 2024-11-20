@@ -2,7 +2,6 @@
     <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/justificantes.css') }}" rel="stylesheet">
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,6 +24,9 @@
         </div>  
         <div class="cuerpo">
             <p>C. CATEDRATICO</p>
+        </div>
+        <div class="alumno">
+            <p>POR MEDIO DEL PRESENTE, ME PERMITO DIRIGIRME A USTED, PARA HACER DE SU CONCENTIMIENTO QUE EL TUTOR DEL ALUMNO(A):</p>
         </div>
     </div>
 </body>

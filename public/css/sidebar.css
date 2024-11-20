@@ -9,10 +9,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-}
-
-.sidebar.smaller {
-    width: 80px;
+    z-index: 1;
 }
 
 .toggle-btn {
@@ -25,20 +22,40 @@
     cursor: pointer;
 }
 
-.content.sidebar-collapsed {
-    margin-left: 80px; 
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
 button svg {
     margin-right: 10px;
 }
 
-.sidebar li {
-    margin: 45px 0;
+.sidebar a {
+    margin: 23px 0;
+    
+}
+
+.sidebar a:hover{
+    color: #ff1f1f;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+
+.openbtn{
+    background-color: #1111;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.openbtn:hover{
+    background-color: #4444;
+}
+
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 .sidebar button {
@@ -63,26 +80,4 @@ button {
 
 .sidebar button:hover {
     background-color: #065f47;
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .sidebar ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .sidebar li {
-        margin: 10px;
-    }
-
-    .sidebar button {
-        padding: 10px;
-    }
 }
