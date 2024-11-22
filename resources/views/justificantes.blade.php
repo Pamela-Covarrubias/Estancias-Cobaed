@@ -1,4 +1,3 @@
-@section('content')
     <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/justificantes.css') }}" rel="stylesheet">
 
@@ -26,7 +25,19 @@
             <p>C. CATEDRATICO</p>
         </div>
         <div class="alumno">
-            <p>POR MEDIO DEL PRESENTE, ME PERMITO DIRIGIRME A USTED, PARA HACER DE SU CONCENTIMIENTO QUE EL TUTOR DEL ALUMNO(A):</p>
+                <p>POR MEDIO DEL PRESENTE, ME PERMITO DIRIGIRME A USTED, PARA HACER DE SU CONCENTIMIENTO QUE EL TUTOR DEL ALUMNO(A): 
+                    <input type="text" id="name" name="name" required>
+                </p>
+            <label><input type= "checkbox" name="subjects[]" value="eceta Médica"> Receta Médica</label><br>
+            <label><input type="checkbox" name="subjects[]" value="Visita del padre de fam."> Visita del padre de fam.</label><br>
+            <label><input type="checkbox" name="subjects[]" value="Nota o constancia de falta"> Nota o constancia de falta</code></label><br>
+
+            <button type="submit">Generar PDF</button>
+        </div>
+        <div class="Cuadradodos">
+            <div class="square">
+
+            </div>
         </div>
     </div>
 </body>

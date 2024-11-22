@@ -8,7 +8,7 @@ use App\Http\Controllers\FichaMedicaController;
 use App\Http\Controllers\CanalizacionesController;
 use App\Http\Controllers\ExpedientesController;
 
-Route::get('/justificante', [JustificanteController::class, 'index'])->name('justificante');
+Route::get('/justificantes', [JustificanteController::class, 'index'])->name('justificante');
 
 Route::get('/reporte-ausentismo', [ReporteAusentismoController::class, 'index'])->name('ausentismo');
 

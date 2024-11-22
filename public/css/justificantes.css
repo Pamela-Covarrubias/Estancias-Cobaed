@@ -48,3 +48,14 @@
 .alumno{
     margin-left: 65px;
 }
+
+.input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    padding: 5px 10px;
+    margin-left: 50px;
+    font-family: inherit;
+    font-size: inherit;
+    width: 700px;
+}

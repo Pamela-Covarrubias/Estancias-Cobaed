@@ -8,7 +8,6 @@ class JustificanteController extends Controller
 {
     public function index()
     {
-        return view('justificantes');
+        return view('justificantes'); // Asegúrate de que la vista exista en resources/views/justificantes.blade.php
     }
 }
-
