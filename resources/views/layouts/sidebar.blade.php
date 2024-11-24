@@ -13,7 +13,7 @@
             </svg>
         </a>
         <a>
-            <button onclick="window.location.href='{{ route('justificante') }}'">
+            <button onclick="window.location.href='{{ route('justificantes') }}'">
                 <svg
                     class="size-5 sm:size-6"
                     width="8.4666mm"

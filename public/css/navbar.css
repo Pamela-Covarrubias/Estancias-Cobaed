@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+}
+
+.navbar {
+    background-color: #D0F6C9;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+.navbar-logo {
+    max-width: 100%;
+    height: auto; 
+    width: 90px;
+}
+

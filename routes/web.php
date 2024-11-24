@@ -42,6 +42,10 @@ Route::get('/expedientes', function () {
     return view('expedientes');
 })->name('expedientes');
 
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
