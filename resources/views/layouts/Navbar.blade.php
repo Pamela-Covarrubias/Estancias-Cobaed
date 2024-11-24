@@ -13,7 +13,7 @@
         <nav class="navbar">
             <!-- Enlace con la imagen -->
             <a href="{{route('welcome')}}" >
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJRj7pvct0dz9gl10oXaNLywYHAJv5fSgYwQ&s" alt="Logo" class="navbar-logo">
+                <img src="https://pbs.twimg.com/media/ElWOfaJXIAAqY__.png" alt="Logo" class="navbar-logo">
             </a>
         </nav>
     </header>
