@@ -54,38 +54,42 @@
     outline: none;
 }
 
-/* Reseteo global de estilos para quitar márgenes y padding */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura un cálculo correcto del tamaño */
+    box-sizing: border-box;
 }
 
-/* Contenedor con márgenes externos para separar de ambos lados */
 .contenedor {
     display: flex;
-    width: calc(100% - 130px); /* Restamos 65px de cada lado (total 130px) */
-    margin: 0 65px;  /* Separación de 65px a la izquierda y derecha */
+    justify-content: center;
+    margin: 20px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.alumno-input {
+    display: flex;
+    width: 100%;
     border: 2px solid black;
 }
 
-/* Estilo para "alumno" */
 .alumno {
-    border: 2px solid black;  /* Borde alrededor de "alumno" */
-    flex-shrink: 0;  /* Evita que el div se encoja si el espacio es limitado */
+    margin-right: 40px; /* Espacio entre el texto y la línea */
 }
 
-/* Estilo para el div de input "iptalumno" */
 .iptalumno {
-    display: flex;
-    border: 2px solid black;  /* Borde alrededor del input */
-    padding: 0;  /* Eliminar padding interno */
-    margin: 0;  /* Eliminar márgenes internos */
+    margin-left: 10px; /* Espacio entre el input y la línea */
 }
 
-#iptalumno {
-    width: 400px;
+#iptalumno{
+    width: 620px;
     border: none;
-    border-bottom: 1px solid #000;
-    outline: none;
+}
+
+/* Línea vertical que se pega a los bordes del contenedor */
+.linea-separacion {
+    width: 2px; /* Grosor de la línea */
+    height: 100%; /* Hace que la línea ocupe toda la altura del contenedor */
+    background-color: black; /* Color de la línea */
 }

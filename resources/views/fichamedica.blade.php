@@ -33,15 +33,18 @@
                 DE
                 <input type="text" name="year" id="year" require>
             </p>
-        </div>  
-        <div class="contenedor">
-            <div class="alumno">
-                Nombre del alumno
-            </div>        
-            <div class="iptalumno">
-                <input type="text" name="iptalumno" id="iptalumno">        
-            </div>
         </div>
+        <div class="contenedor">
+            <div class="alumno-input">
+                <div class="alumno">
+                    Nombre del alumno
+                </div>        
+                <div class="linea-separacion"></div> <!-- Línea vertical -->
+                <div class="iptalumno">
+                    <input type="text" name="iptalumno" id="iptalumno">        
+                </div>
+            </div>
+        </div>      
     </div>
 </body>
 </html>
