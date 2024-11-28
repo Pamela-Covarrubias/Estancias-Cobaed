@@ -1,0 +1,91 @@
+.cuadrado {
+    width: 1100px;
+    height: 900px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px auto; 
+    justify-content: center;
+    padding: 10px;
+    border-radius: 35px;
+    margin-top: 100px;
+}
+
+.cuadrado img {
+    width: 120px;              
+    height: auto;
+    margin-right: 20px;  
+}
+
+.square {
+    width: 100%; 
+    height: 200px;    
+    text-align: center;         
+    position: relative;        
+    display: flex;            
+    align-items: center;       
+    padding: 0px;            
+    justify-content: flex-start; 
+    justify-content: center;
+}
+
+.date{
+    margin-right: 65px;
+    text-align: right;
+    font-size: 20px;
+}
+
+#day{
+    width: 35px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+#month{
+    width: 35px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+#year{
+    width: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+/* Reseteo global de estilos para quitar márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura un cálculo correcto del tamaño */
+}
+
+/* Contenedor con márgenes externos para separar de ambos lados */
+.contenedor {
+    display: flex;
+    width: calc(100% - 130px); /* Restamos 65px de cada lado (total 130px) */
+    margin: 0 65px;  /* Separación de 65px a la izquierda y derecha */
+    border: 2px solid black;
+}
+
+/* Estilo para "alumno" */
+.alumno {
+    border: 2px solid black;  /* Borde alrededor de "alumno" */
+    flex-shrink: 0;  /* Evita que el div se encoja si el espacio es limitado */
+}
+
+/* Estilo para el div de input "iptalumno" */
+.iptalumno {
+    display: flex;
+    border: 2px solid black;  /* Borde alrededor del input */
+    padding: 0;  /* Eliminar padding interno */
+    margin: 0;  /* Eliminar márgenes internos */
+}
+
+#iptalumno {
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
