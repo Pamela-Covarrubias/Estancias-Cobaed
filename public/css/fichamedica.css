@@ -1,6 +1,5 @@
 .cuadrado {
     width: 1100px;
-    height: 900px;
     border: 1px solid rgb(0, 0, 0);
     margin: 20px auto; 
     justify-content: center;
@@ -58,38 +57,273 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.linea-separacion {
+    width: 2px; /* Grosor de la línea */
+    height: 30px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    margin: 0 10px; /* Espacio entre la línea y los inputs */
+}
+
+.linea-separaciondir {
+    width: 2px; /* Grosor de la línea */
+    height: 50px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    margin: 0 10px; /* Espacio entre la línea y los inputs */
 }
 
 .contenedor {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: -2px;
     margin-left: 65px;
     margin-right: 65px;
 }
 
-.alumno-input {
+.contenedorsalud{
+    justify-content: center;
+    margin: -2px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.estu-input, .direccion-input, .salud-input, .antibiotico-input, .medicamento-input, .alimento-input, .animales-input, .picaduras-input {
     display: flex;
     width: 100%;
     border: 2px solid black;
 }
 
-.alumno {
-    margin-right: 40px; /* Espacio entre el texto y la línea */
+.estu, .direccion, .salud, .antibiotico, .medicamento, .alimento, .animales, .picaduras {
+    margin-left: 10px;
+    flex: 0 0 210px;  
 }
 
-.iptalumno {
-    margin-left: 10px; /* Espacio entre el input y la línea */
+#iptestu, #iptdireccion, #iptsalud {
+    width: 680px;
+    padding-top: 3px;
+    border: none;
+    outline: none;
 }
 
-#iptalumno{
-    width: 620px;
+.semestre-input, .telefono-input, .hepatitis-input, .anemia-input, .ha-input, .asma-input {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.semestre, .telefono, .hepatitis, .anemia, .ha, .asma {
+    margin-right: 40px;
+    margin-left: 10px;
+    flex: 0 0 170px;  
+}
+
+#iptsemestre, #ipttelefono, #ipthepatitis, #iptanemia, #iptha, #iptasma {
+    width: 200px;
+    border: none;
+    outline: none;
+}
+
+.turno-input, .celular-input, .gastritis-input, .diabetes-input, .epilepsia-input, .respiratorias-input, .antibioticono-input, .medicamentono-input, .alimentono-input, .animalesno-input, .picadurasno-input {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    border-left: none;
+}
+
+.turno, .celular, .gastritis, .diabetes, .epilepsia, .respiratorias, .antibioticono, .medicamentono, .alimentono, .animalesno, .picadurasno {
+    margin-right: 40px;
+    margin-left: 10px;
+    flex: 0 0 95px;  
+}
+
+#iptturno, #iptcelular, #iptgastritis, #iptdiabetes, #iptepilepsia, #iptrespiratorias {
+    width: 300px;
+    padding-top: 3px;
+    border: none;
+    outline: none;
+}
+
+.emergy-input {
+    display: flex;
+    height: 54px;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.emergy {
+    margin-top: 3px;
+    margin-left: 10px;
+    height: 50px;
+    flex: 0 0 210px;  
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.iptemergy {
+    margin-left: 10px;
+}
+
+#iptemergy {
+    width: 600px;
+    height: 50px;
+    padding-top: 3px;
+    border: none;
+    outline: none;
+}
+
+.grlsalud{
+    border: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: -2px;
+    width: 234px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.padecimientos{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.especifico, .firma-tutor{
+    border: 2px solid black;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.padres{
+    margin-top: 25px;
+}
+
+#iptenfespecifico, #iptfirma-tutor{ 
+    width: 944px;
+    height: 55px;
+    border: 2px solid black;
+    margin-top: 2px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+}   
+
+input[type="radio"] {
+    margin-right: 7px
+    
+}
+
+label {
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#iptcualanti, #iptcualmedi, #iptcualalimento, #iptcualanimal, #iptcualpica{
     border: none;
 }
 
-/* Línea vertical que se pega a los bordes del contenedor */
-.linea-separacion {
-    width: 2px; /* Grosor de la línea */
-    height: 100%; /* Hace que la línea ocupe toda la altura del contenedor */
-    background-color: black; /* Color de la línea */
+.contenedorAP {
+    display: flex;
+    justify-content: center;
+    margin: -2px;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 25px;
+    border: 2px solid black;
+}
+
+.contenedorAPS {
+    display: flex;
+    justify-content: center;
+    margin: -2px;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 0;
+    border: 2px solid black;
+}
+
+.psicologico-input, .depresion-input, .ansiedad-input {
+    display: flex;
+    width: 100%;
+    flex-grow: 2; /* Esto hará que el apartado Psicológico sea más grande */
+    border: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    padding-left: 8px;
+}
+
+.diagnostico-input {
+    display: flex;
+    width: 100%;
+}
+
+.seguimiento-input{
+    display: flex;
+    width: 100%;
+}
+
+.diagnostico, .seguimiento {
+    margin-right: 40px;
+    margin-left: 10px;
+    flex: 0 0 160px;
+}
+
+.separacion {
+    width: 2px;
+    height: 100%;
+    position: relative;
+    left: 101px;
+    background-color: black;
+}
+
+.linea-separacion-psicologico {
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    left: 100px; /* Mueve la línea 50px a la derecha */
+}
+
+
+.iptdiagnostico {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.iptseguimiento{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+#iptdiadepre, #iptseguidepre, #iptdiaansi, #iptdiaTA, #iptdiafobia, #iptdiaTDH, #iptdiaotra{
+    border: none;
+    outline: none;
+}
+
+.observaciones{
+    border: 2px solid black;
+    margin-left: 65px;
+    margin-right: 65px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#iptobservaciones{
+    border: 2px solid black;
+    width: 88%;
+    margin-left: 65px;
+    margin-right: 65px;
 }

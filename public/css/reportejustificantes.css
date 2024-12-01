@@ -71,6 +71,22 @@
     padding: 10px 0;
     margin-left: 20px;
     border-top: none;
+    padding-bottom: 0;
+
+}
+
+.enrollment{
+    border: 2px black solid;
+    margin-left: 65px;
+    margin-right: 65px;
+    border-top: none;
+}
+
+.matricula{
+    padding: 10px 0;
+    padding-bottom: 0;
+    margin-left: 20px;
+    border-top: none;
 }
 
 .teacher{
@@ -84,6 +100,7 @@
     padding: 10px 0;
     margin-left: 20px;
     border-top: none;
+    padding-bottom: 0;
 }
 
 #textalumno{
@@ -93,6 +110,15 @@
     outline: none;
     width: 440px;
     margin-left: 45px;
+}
+
+#matricula{
+    background-color: #ffff;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    width: 440px;
+    margin-left: 120px;
 }
 
 #textteacher{
@@ -119,4 +145,5 @@
     width: 948px;
     border: 2px black solid;
     border-top: none;
+    outline: none;
 }

@@ -37,6 +37,15 @@
                 </p>
             </div>
         </div>
+        
+        <div class="enrollment">
+            <div class="matricula">
+                <p>Matricula
+                    <input type="number" name="matricula" id="matricula" inputmode="numeric" required>
+                </p>
+            </div>
+        </div>
+
         <div class="teacher">
             <div class="report">
                 <p>Docente que reportó
