@@ -1,3 +1,4 @@
+@extends('layouts.sidebar')
 @extends('layouts.navbar')
 @section('content')
 

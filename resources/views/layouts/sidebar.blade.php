@@ -1,18 +1,28 @@
-<div class="sidebar">
-    <div id="mysidebar" class="sidebar">
-        <a href="" class="closebtn" onclick="closeNav()">
-            <svg
-                class="size-5 sm:size-6"
-                width="8.4666mm"
-                height="8.4666mm"
-                viewBox="0 0 846.66 846.66"
-                fill="none"
-            >
-            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
-            fill="FFFF"/>+
-            </svg>
-        </a>
-        <a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral Colapsable</title>
+
+</head>
+<body>
+    <!-- Ícono de hamburguesa -->
+    <button id="menu-icon" onclick="toggleNav()">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <defs><style>.cls-1{fill:none;}</style></defs>
+            <g data-name="Layer 2" id="Lazyer_2">
+                <path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z"/>
+                <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/>
+                <path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/>
+            </g>
+            <g id="frame"><rect class="cls-1" height="32" width="32"/></g>
+        </svg>
+    </button>
+
+    <!-- Barra lateral -->
+    <div id="mysidebar">
+    <a>
             <button onclick="window.location.href='{{ route('justificantes') }}'">
                 <svg
                     class="size-5 sm:size-6"
@@ -29,7 +39,7 @@
                 Justificante
             </button>
         </a>
-        <a><button onclick="window.location.href='{{ route('reporte_ausentismo') }}'">
+        <a><button onclick="window.location. href='{{ route('reporte_ausentismo') }}'">
             <svg
                 class="size-5 sm:size-6"
                 width="29"
@@ -43,6 +53,7 @@
             </svg>
             R. Ausentismo</button>
             </li>
+        </a>
         <a><button onclick="window.location.href='{{ route('fichamedica') }}'">
             <svg
                 class="size-5 sm:size-6"
@@ -102,13 +113,23 @@
             Expedientes</button>
         </a>
     </div>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">open sidebar</button>
-    </div>
+
+
     <script>
-        function openNav(){
-            document.getElementById("mysidebar").style.width = "250px"
-            document.getElementById("main").style.marginLeft = "250px"        
+        function toggleNav() {
+            var sidebar = document.getElementById("mysidebar");
+            var content = document.getElementById("content");
+
+            // Si la barra lateral está abierta (250px de ancho), colapsarla
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";  // Cierra la barra lateral
+                content.classList.remove("expanded");  // Quitar el margen en el contenido
+            } else {
+                // Si la barra lateral está colapsada, abrirla
+                sidebar.style.width = "250px";  // Abre la barra lateral
+                content.classList.add("expanded");  // Agregar el margen en el contenido
+            }
         }
     </script>
-</div>
+</body>
+</html>

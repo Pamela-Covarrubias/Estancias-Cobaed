@@ -149,22 +149,43 @@
 }
 
 .guardar {
-    width: 90px;
-    margin-left:500px;
-    margin-top: 25px;
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    display: flex; /* Activar flexbox */
+    margin-right: 80px;
+    justify-content: right; /* Centrar los botones horizontalmente */
+    gap: 25px; /* Espaciado entre botones */
+    margin-top: 20px; /* Separación desde otros elementos superiores */
 }
 
-.btn-custom {
-    background-color: #4CAF50; /* Color verde */
-    color: white; /* Texto blanco */
-    padding: 10px 20px;
+.btn-custom, .btn-pdf {
+    width: 130px;
+    text-align: center;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
+.icon{
+    margin-left: 10px;
+}
+
+/* Botón Guardar */
+.btn-custom {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+}
+
 .btn-custom:hover {
-    background-color: #45a049; /* Un tono más oscuro */
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+/* Botón Generar PDF */
+.btn-pdf {
+    background-color: #536370be;
+    color: white;
+    padding-right: 2px;
+}
+
+.btn-pdf:hover {
+    background-color: #4d576181;
 }

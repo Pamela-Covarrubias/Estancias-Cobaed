@@ -1,4 +1,4 @@
-.sidebar {
+.body {
     background-color: #0F8C5E;
     width: 250px;
     height: 100vh;
@@ -12,72 +12,88 @@
     z-index: 1;
 }
 
-.toggle-btn {
-    position: absolute;
-    top: 20px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-button svg {
-    margin-right: 10px;
-}
-
-.sidebar a {
-    margin: 23px 0;
-    
-}
-
-.sidebar a:hover{
-    color: #ff1f1f;
-}
-
-.sidebar .closebtn{
-    position: absolute;
+/* Estilos para la barra lateral */
+#mysidebar {
+    position: fixed;
     top: 0;
-    right: 25px;
-    margin-left: 50px;
-}
-
-.openbtn{
-    background-color: #1111;
-    color: #fff;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.openbtn:hover{
-    background-color: #4444;
-}
-
-#main{
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-.sidebar button {
-    color: white;
+    left: 0;
+    width: 0;
+    height: 100%;
     background-color: #0F8C5E;
-    border: 2px ;
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    color: white;
-    text-align: left;
-    padding: 10px;
+    overflow-x: hidden;
+    transition: 0.2s ease;
+    padding-top: 60px;  /* Espacio suficiente para el ícono de menú */
 }
 
-.sidebar button:hover {
-    background-color: #065f47;
+#mysidebar a {
+    padding: 30px 8px 30px 32px;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 22px;
+    color: white; /* Asegura que el texto sea visible */
+    background-color: transparent !important; /* Forzar sin fondo */
+    display: flex; /* Para alinear iconos y texto */
+    align-items: center; /* Centrar iconos verticalmente */
+    gap: 30px; /* Espacio entre icono y texto */
+    border: none; /* Sin bordes */
+    outline: none;
+    margin: 0;
+    transition: 0.3s;
+}
+
+/* Asegurarse de que los botones dentro de los enlaces no tengan fondo */
+#mysidebar a button {
+    background: none !important;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Mantener iconos inline */
+    align-items: center;
+    cursor: pointer;
+    color: inherit; /* Hereda el color del enlace */
+    font-size: inherit; /* Hereda el tamaño del texto */
+}
+
+/* Líneas entre enlaces */
+#mysidebar a:not(:last-child) {
+    border-bottom: 1px solid #ffffff; /* Línea blanca entre los enlaces */
+}
+
+/* Quitar fondo y bordes al pasar el ratón */
+#mysidebar a:hover {
+    background-color: transparent !important; /* Sin fondo al pasar el ratón */
+    color: #aec4b1; /* Cambiar color al pasar el ratón (opcional) */
+}
+
+#mysidebar a button:hover {
+    background-color: transparent !important; /* Sin fondo para el botón */
+}
+
+/* Ícono de hamburguesa */
+#menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#menu-icon svg {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+/* Contenido principal */
+#content {
+    margin-left: 0;
+    transition: margin-left 0.3s;
+    padding: 20px;
+}
+
+/* Cuando la barra lateral está abierta */
+#content.expanded {
+    margin-left: 250px; /* Mismo ancho que la barra lateral */
 }
