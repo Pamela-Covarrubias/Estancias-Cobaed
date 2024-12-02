@@ -61,6 +61,9 @@
         <div class="notastxt">
             <input type="text" name="notastxt" id="notastxt">
         </div>
+        <div class="guardar">
+            <button type="submit" class="btn-custom">Guardar</button>
+        </div>
     </div>
     </div>
 </body>
